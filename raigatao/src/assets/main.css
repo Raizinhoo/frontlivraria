@@ -1,0 +1,79 @@
+@import "./base.css";
+
+#app {
+  display: grid;
+  height: 110vh;
+  grid-template-rows: 5% auto;
+  grid-template-areas: 
+  'header'
+  'main';
+}
+
+header {
+  grid-area: header;
+  background-color: #475d9b;
+  color: white(126, 58, 58);
+  font-size: 2.3em;
+}
+
+
+header a {
+  text-decoration: none;
+  color: #1a1529;
+}
+
+main {
+  grid-area: main;
+}
+
+header nav a:hover{
+  color: #dfdfdf;
+}
+
+header nav {
+  font-size: large;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0.65%;
+}
+
+header a {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+/* 
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+@media (hover: hoHome Livraria Raiver) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+} */
